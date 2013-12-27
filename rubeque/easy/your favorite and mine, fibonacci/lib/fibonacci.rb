@@ -1,5 +1,5 @@
 def fibo_finder(n)
-  return n if n == 0 || n == 1
+  return n if n <= 1
 
   # iterate through 2 to n
   # fibo_num will be sum of last two values in the sequence
@@ -9,8 +9,7 @@ def fibo_finder(n)
   sequence = [0, 1]
 
   (2..n).each do |n|
-    fibo_num = sequence[-1] + sequence[-2]
-    sequence << fibo_num
+    sequence << sequence[-1] + sequence[-2]
   end
   
   sequence.last
