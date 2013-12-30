@@ -15,4 +15,5 @@ def separate_with_comma(n)
   end
 
   result.reverse[0..-2]
+  # n.to_s.reverse.gsub('000', '000,').reverse
 end
