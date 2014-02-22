@@ -23,5 +23,13 @@ describe('ABCheck', function() {
 
   it("handles a simple 'false' case where b occurs ahead of a", function() {
     expect(abCheck('ffboooooooa')).toBe('false');
-  })
+  });
+
+  it("returns false when a occurs 2 steps ahead of b", function() {
+    expect(abCheck('ooaoob')).toBe('false');
+  });
+
+  it("returns false when b occurs 2 steps ahead of a", function() {
+    expect(abCheck('oobooa')).toBe('false');
+  });
 })
