@@ -3,5 +3,11 @@
 // else return 'false'
 
 exports.abCheck = function(string) {
-  
+  // set variables a and b
+  var aIndex = string.indexOf('a');
+  var bIndex = string.indexOf('b');
+
+  if (aIndex === -1 || bIndex === -1) {
+    return 'false';
+  };
 }
