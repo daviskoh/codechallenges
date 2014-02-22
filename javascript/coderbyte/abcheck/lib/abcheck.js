@@ -10,4 +10,14 @@ exports.abCheck = function(string) {
   if (aIndex === -1 || bIndex === -1) {
     return 'false';
   };
+
+  // if absolute distance between aIndex & bIndex is === 3
+  if (Math.abs(aIndex - bIndex) === 3) {
+    return 'true';
+  } else {
+    return 'false';
+  };
+    // return 'true'
+  // else
+    // return another cycle of abCheck
 }
