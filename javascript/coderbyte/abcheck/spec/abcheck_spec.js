@@ -16,4 +16,12 @@ describe('ABCheck', function() {
   it("handles a simple 'false' case with 1 a and 1 b", function() {
     expect(abCheck('dddannnnnb')).toBe('false');
   });
+
+  it("handles a simple case 'true' where b occurs ahead of a", function() {
+    expect(abCheck('ffboooa')).toBe('true');
+  });
+
+  it("handles a simple 'false' case where b occurs ahead of a", function() {
+    expect(abCheck('ffboooooooa')).toBe('false');
+  })
 })

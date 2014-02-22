@@ -12,7 +12,7 @@ exports.abCheck = function(string) {
   };
 
   // if absolute distance between aIndex & bIndex is === 3
-  if (Math.abs((aIndex + 1) - bIndex) === 3) {
+  if (Math.abs((aIndex + 1) - bIndex) === 3 || Math.abs((bIndex + 1) - aIndex) === 3) {
     return 'true';
   } else {
     return 'false';
