@@ -17,7 +17,6 @@ exports.abCheck = function(string) {
   } else {
     return 'false';
   };
-    // return 'true'
   // else
     // return another cycle of abCheck
 }
