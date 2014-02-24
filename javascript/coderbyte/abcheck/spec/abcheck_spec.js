@@ -33,4 +33,7 @@ describe('ABCheck', function() {
     expect(abCheck('oobooa')).toBe('false');
   });
 
+  it("handles a case with multiple a's", function() {
+    expect(abCheck('aooaooob')).toBe('true');
+  });
 })
