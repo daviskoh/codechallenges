@@ -12,4 +12,8 @@ describe('vowelCount', function() {
   it('handles a simple case with 2 vowels', function() {
     expect(vowelCount('hello')).toBe(2);
   });
+
+  it('handles a simple case with 3 vowels', function() {
+    expect(vowelCount('coderbyte')).toBe(3);
+  });
 });
