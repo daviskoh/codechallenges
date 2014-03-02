@@ -1,4 +1,4 @@
-var should = require('should');
+var should = require('../dependencies/should');
 var reverseString = require('../lib/reverse_string');
 
 describe('reverseString', function() {
