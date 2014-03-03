@@ -13,4 +13,8 @@ describe('reverseString', function() {
   it('reverses a string keeping origin punctuation', function() {
     reverseString('ello, there').should.eql('olle, ereht');
   });
+
+  it('handles multiple punctuation', function() {
+    reverseString('ello, there.').should.eql('olle, ereht.');
+  });
 });
