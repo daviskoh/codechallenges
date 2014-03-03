@@ -17,4 +17,8 @@ describe('reverseString', function() {
   it('handles multiple punctuation', function() {
     reverseString('ello, there.').should.eql('olle, ereht.');
   });
+
+  it('keeps sentences capitalized', function() {
+    reverseString('Ello, there.').should.eql('Olle, ereht.');
+  });
 });

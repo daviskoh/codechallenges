@@ -10,11 +10,22 @@ function punctuationIndex (word) {
   return false;
 }
 
+function capitalized (word) {
+  if (word.charAt(0).toUpperCase() + word.substring(1, word.length) === word) {
+    return true;
+  };
+}
+
 function singleWordReverser (word) {
   if (punctuationIndex(word) === false) {
     return word.split('').reverse().join('');
   } else {
-    return word.substring(0, punctuationIndex(word)).split('').reverse().join('') + word[punctuationIndex(word)];
+    var reversedString = word.toLowerCase().substring(0, punctuationIndex(word)).split('').reverse().join('');
+    var punctuation = word[punctuationIndex(word)];
+    
+    return (capitalized(word) ? reversedString.charAt(0).toUpperCase() : reversedString.charAt(0))
+    + reversedString.substring(1, reversedString.length)
+    + punctuation;
   };
 }
 
