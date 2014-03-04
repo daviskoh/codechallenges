@@ -1,0 +1,3 @@
+exports.wordCount = function(string) {
+  
+}
