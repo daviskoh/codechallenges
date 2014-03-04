@@ -28,4 +28,8 @@ describe('isPrime', function() {
   it('handles a multiple digit non-prime number', function() {
     expect(isPrime(110)).toBe('false');
   });
+
+  it('returns false for numbers less than 2', function() {
+    expect(isPrime(-6)).toBe('false');
+  });
 });
