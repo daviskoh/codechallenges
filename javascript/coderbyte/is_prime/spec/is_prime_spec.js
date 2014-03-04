@@ -12,4 +12,8 @@ describe('isPrime', function() {
   it('returns false for 1', function() {
     expect(isPrime(1)).toBe('false');
   });
+
+  it('handles a single digit prime number', function() {
+    expect(isPrime(5)).toBe('true');
+  });
 });
