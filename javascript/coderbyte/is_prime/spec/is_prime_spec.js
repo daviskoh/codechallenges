@@ -32,4 +32,8 @@ describe('isPrime', function() {
   it('returns false for numbers less than 3', function() {
     expect(isPrime(-6)).toBe('false');
   });
+
+  it('returns true for 3', function() {
+    expect(isPrime(3)).toBe('true');
+  });
 });
