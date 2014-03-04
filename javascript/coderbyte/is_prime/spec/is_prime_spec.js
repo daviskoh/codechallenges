@@ -16,4 +16,8 @@ describe('isPrime', function() {
   it('handles a single digit prime number', function() {
     expect(isPrime(5)).toBe('true');
   });
+
+  it('handles a multiple digit prime number', function() {
+    expect(isPrime(19)).toBe('true');
+  });
 });
