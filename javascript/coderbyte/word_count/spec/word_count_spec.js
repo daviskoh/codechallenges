@@ -8,4 +8,8 @@ describe('wordCount', function() {
   it('handles a simple case without punctuation', function() {
     expect(wordCount('Hello World')).toBe(2);
   });
+
+  it('handles a sentence with punctuation', function() {
+    expect(wordCount("Argument goes, here.")).toBe(3);
+  });
 });
