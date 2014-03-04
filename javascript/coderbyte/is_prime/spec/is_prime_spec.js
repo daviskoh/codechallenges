@@ -24,4 +24,8 @@ describe('isPrime', function() {
   it('handles a single digit non-prime number', function() {
     expect(isPrime(6)).toBe('false');
   });
+
+  it('handles a multiple digit non-prime number', function() {
+    expect(isPrime(110)).toBe('false');
+  });
 });
