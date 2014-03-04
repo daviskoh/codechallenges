@@ -29,7 +29,7 @@ describe('isPrime', function() {
     expect(isPrime(110)).toBe('false');
   });
 
-  it('returns false for numbers less than 2', function() {
+  it('returns false for numbers less than 3', function() {
     expect(isPrime(-6)).toBe('false');
   });
 });
