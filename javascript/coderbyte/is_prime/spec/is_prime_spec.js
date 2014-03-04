@@ -20,4 +20,8 @@ describe('isPrime', function() {
   it('handles a multiple digit prime number', function() {
     expect(isPrime(19)).toBe('true');
   });
+
+  it('handles a single digit non-prime number', function() {
+    expect(isPrime(6)).toBe('false');
+  });
 });
