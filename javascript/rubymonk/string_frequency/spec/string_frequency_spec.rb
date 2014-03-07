@@ -9,4 +9,8 @@ describe '#string_frequency' do
   it 'should handle a simple sentence & word' do 
     expect(string_frequency('ello fred', 'ello')).to eq(1)
   end
+
+  it 'should handle a complex sentence & word' do
+    expect(string_frequency('The cat in the hat ate food in the ghetto.', 'The')).to eq(3)
+  end
 end
