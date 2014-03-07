@@ -2,5 +2,5 @@
 # present exactly once in the array.
 
 def non_duplicated_values(array)
-  ''
+  array
 end
