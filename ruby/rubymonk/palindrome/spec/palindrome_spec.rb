@@ -13,4 +13,8 @@ describe '#palindrome?' do
   it 'returns false for 2 letter word' do 
     expect(palindrome?('ea')).to eq(false)
   end
+
+  it 'correctly handles multiple word palindromes' do
+    expect(palindrome?('race car')).to eq(true)
+  end
 end

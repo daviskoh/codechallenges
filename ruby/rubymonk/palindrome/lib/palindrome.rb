@@ -2,5 +2,5 @@
 # palindrome === word that is same when reversed
 
 def palindrome?(string)
-  string.downcase === string.downcase.reverse
+  string.downcase.gsub(/\s+/, '') === string.downcase.gsub(/\s+/, '').reverse
 end
