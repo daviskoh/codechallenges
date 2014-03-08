@@ -3,5 +3,6 @@
 // do not use .replace
 
 exports.palindrome = function(string) {
+  // is palindrome if string.reverse === string
   return true
 }
