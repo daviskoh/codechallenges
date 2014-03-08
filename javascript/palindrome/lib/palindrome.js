@@ -2,7 +2,9 @@
 // do not use .reverse
 // do not use .replace
 
+var reverseString = require('../lib/reverse_string').reverseString;
+
 exports.palindrome = function(string) {
   // is palindrome if string.reverse === string
-  return true
+  return string === reverseString(string);
 }
