@@ -4,4 +4,8 @@ describe('removeWhitespace', function() {
   it('is a function', function() {
     expect(typeof removeWhitespace).toBe('function');
   });
+
+  it('handles simple case w/ 1 space', function() {
+    expect(removeWhitespace('ello ')).toBe('ello');
+  });
 });
