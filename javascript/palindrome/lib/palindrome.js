@@ -2,6 +2,6 @@
 // do not use .reverse
 // do not use .replace
 
-exports.palindrome = function() {
+exports.palindrome = function(string) {
 
 }
