@@ -9,4 +9,8 @@ describe '#palindrome?' do
   it 'handles a simple 1 letter case' do 
     expect(palindrome?('e')).to eq(true)
   end
+
+  it 'returns false for 2 letter word' do 
+    expect(palindrome?('ea')).to eq(false)
+  end
 end
