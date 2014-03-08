@@ -2,5 +2,5 @@
 # palindrome === word that is same when reversed
 
 def palindrome?(string)
-  ''
+  true
 end
