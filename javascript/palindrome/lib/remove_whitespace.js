@@ -1,0 +1,3 @@
+exports.removeWhitespace = function(string) {
+  
+}

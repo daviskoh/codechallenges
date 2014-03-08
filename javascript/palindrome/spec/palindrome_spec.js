@@ -16,4 +16,8 @@ describe('palindrome', function() {
   it('disregards case', function() {
     expect(palindrome('Eae')).toBe(true);
   });
+
+  it('handles multi-word cases', function() {
+    expect(palindrome('race car')).toBe(true);
+  });
 });
