@@ -2,6 +2,16 @@
 // magazine
 // check if magazine has required characters to make given ransom note
 
+function characterCount(string, character) {
+  var count = 0;
+
+  string.split('').forEach(function(c) {
+    if (c === character) { count++; };
+  });
+
+  return count;
+}
+
 module.exports = function(ransomNote, magazine) {
   // split ransomNote
   var ransomArray = ransomNote.toLowerCase().replace(/\s+/g, '').split('');
@@ -11,7 +21,8 @@ module.exports = function(ransomNote, magazine) {
   for (var i = ransomArray.length - 1; i >= 0; i--) {
     // check if magazine contains it
     // if any character not contained return false
-    if (magazineLower.indexOf(ransomArray[i]) === -1) {
+    // if count of character is less than required
+    if (characterCount(magazine, ransomArray[i]) < characterCount(ransomNote, ransomArray[i])) {
       return false;
     };
   };

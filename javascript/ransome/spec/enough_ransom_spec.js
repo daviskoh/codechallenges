@@ -41,4 +41,11 @@ describe('enoughRansom', function() {
 
     expect(enoughRansom(ransomNote, magazine)).toBe(true);
   });
+
+  it('makes sure there are enough characters', function() {
+    ransomNote = 'aabc';
+    magazine = 'abc';    
+
+    expect(enoughRansom(ransomNote, magazine)).toBe(false);
+  });
 });
