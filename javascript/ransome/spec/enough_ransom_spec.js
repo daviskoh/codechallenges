@@ -10,11 +10,14 @@ describe('enoughRansom', function() {
   it('handles a simple case', function() {
     ransomNote = 'a';
     magazine = 'ab';
+
     expect(enoughRansom(ransomNote, magazine)).toBe(true);
   });
 
   it('is case insensitive', function() {
-    ransomNote = 'a';
+    ransomNote = 'A';
     magazine = 'ab';
+    
+    expect(enoughRansom(ransomNote, magazine)).toBe(true);
   });
 });
