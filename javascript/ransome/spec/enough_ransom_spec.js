@@ -34,4 +34,11 @@ describe('enoughRansom', function() {
 
     expect(enoughRansom(ransomNote, magazine)).toBe(false);
   });
+
+  it('ignores whitespace', function() {
+    ransomNote = 'abc def';
+    magazine = 'zzzzazzzzbzzzczzzdzzezzf';
+
+    expect(enoughRansom(ransomNote, magazine)).toBe(true);
+  });
 });

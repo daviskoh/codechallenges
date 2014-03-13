@@ -10,7 +10,7 @@ module.exports = function(ransomNote, magazine) {
 
   // return true
 
-  var ransomArray = ransomNote.toLowerCase().split('');
+  var ransomArray = ransomNote.toLowerCase().replace(/\s+/g, '').split('');
   var magazineLower = magazine.toLowerCase();
 
   for (var i = ransomArray.length - 1; i >= 0; i--) {
