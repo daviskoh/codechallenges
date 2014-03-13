@@ -3,6 +3,15 @@
 // check if magazine has required characters to make given ransom note
 
 module.exports = function(ransomNote, magazine) {
-  // return magazine contain ransomNote
-  return magazine.toLowerCase().indexOf(ransomNote.toLowerCase()) !== -1;
+  // split ransomNote
+  // for each character
+    // check if magazine contains it
+      // if any character not contained return false
+
+  // return true
+  ransomNote.split('').forEach(function(character) {
+    if (magazine.indexOf(character) === -1) { return false; };
+  });
+
+  return true;
 }

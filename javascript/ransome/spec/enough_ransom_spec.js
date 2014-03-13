@@ -17,7 +17,14 @@ describe('enoughRansom', function() {
   it('is case insensitive', function() {
     ransomNote = 'A';
     magazine = 'ab';
-    
+
+    expect(enoughRansom(ransomNote, magazine)).toBe(true);
+  });
+
+  it('handles more complex 1 word case', function() {
+    ransomNote = 'abc';
+    magazine = 'adec';
+
     expect(enoughRansom(ransomNote, magazine)).toBe(true);
   });
 });
