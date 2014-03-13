@@ -23,8 +23,15 @@ describe('enoughRansom', function() {
 
   it('handles more complex 1 word case', function() {
     ransomNote = 'abc';
-    magazine = 'adec';
+    magazine = 'abec';
 
     expect(enoughRansom(ransomNote, magazine)).toBe(true);
+  });
+
+  it('returns false for complex 1 word case', function() {
+    ransomNote = 'abc';
+    magazine = 'abeee';
+
+    expect(enoughRansom(ransomNote, magazine)).toBe(false);
   });
 });

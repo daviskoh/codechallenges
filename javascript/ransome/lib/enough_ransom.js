@@ -9,9 +9,15 @@ module.exports = function(ransomNote, magazine) {
       // if any character not contained return false
 
   // return true
-  ransomNote.split('').forEach(function(character) {
-    if (magazine.indexOf(character) === -1) { return false; };
-  });
+
+  var ransomArray = ransomNote.toLowerCase().split('');
+  var magazineLower = magazine.toLowerCase();
+
+  for (var i = ransomArray.length - 1; i >= 0; i--) {
+    if (magazineLower.indexOf(ransomArray[i]) === -1) {
+      return false;
+    };
+  };
 
   return true;
 }
