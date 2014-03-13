@@ -4,5 +4,5 @@
 
 module.exports = function(ransomNote, magazine) {
   // return magazine contain ransomNote
-  return magazine.charAt(ransomNote) !== -1;
+  return magazine.indexOf(ransomNote) !== -1;
 }
