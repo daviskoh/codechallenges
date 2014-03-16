@@ -8,11 +8,11 @@ function count7(n) {
     return 0;
   } 
 
+  // recursive case
   if (n % 10 === 7) {
     return 1 + count7(n / 10);
   };
 
-  // recursive case
   return count7(n / 10);
 };
 
