@@ -8,4 +8,8 @@ describe('countx', function() {
   it('recognizes x', function() {
     expect(countx('x')).toBe(1);
   });
+
+  it('handles an empty string', function() {
+    expect(countx('')).toBe(0);
+  });
 });
