@@ -12,4 +12,8 @@ describe('bunnyEars', function() {
   it('odd bunny has 2 ears', function() {
     expect(bunnyEars(1)).toBe(2);
   });
+
+  it('handles 2 bunnies', function() {
+    expect(bunnyEars(2)).toBe(5);
+  });
 });
