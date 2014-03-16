@@ -2,8 +2,10 @@
 // which is n * (n-1) * (n-2) ... 1.
 // Compute the result recursively (without loops). 
 
-function factorial() {
-  
+function factorial(n) {
+  if (n === 1) {
+    return 1;
+  };
 }
 
 module.exports = factorial;
