@@ -16,4 +16,12 @@ describe('bunnyEars', function() {
   it('handles 2 bunnies', function() {
     expect(bunnyEars(2)).toBe(5);
   });
+
+  it('handles 5 bunnies', function() {
+    expect(bunnyEars(5)).toBe(12);
+  });
+
+  it('handles 10 bunnies', function() {
+    expect(bunnyEars(10)).toBe(25);
+  });
 });

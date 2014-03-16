@@ -11,10 +11,10 @@ function bunnyEars(nOfBunnies) {
     return 0;
   };
 
-  if (nOfBunnies === 1 || nOfBunnies % 3 === 0) {
-    return 2 + bunnyEars(nOfBunnies - 1);
-  } else {
+  if (nOfBunnies % 2 === 0) {
     return 3 + bunnyEars(nOfBunnies - 1);
+  } else {
+    return 2 + bunnyEars(nOfBunnies - 1);
   };
 }
 
