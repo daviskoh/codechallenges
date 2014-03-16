@@ -10,6 +10,10 @@ function bunnyEars(nOfBunnies) {
   if (nOfBunnies === 0) {
     return 0;
   };
+
+  if (nOfBunnies === 1) {
+    return 2;
+  };
 }
 
 module.exports = bunnyEars;
