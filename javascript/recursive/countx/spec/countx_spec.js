@@ -24,4 +24,8 @@ describe('countx', function() {
   it('handles long string not containing x', function() {
     expect(countx(';sldkfja;lsdkfjas;kdf')).toBe(0);
   });
+
+  it('ignores whitespace', function() {
+    expect(countx('sdflkj xdflkj x dflkj')).toBe(2);
+  });
 });
