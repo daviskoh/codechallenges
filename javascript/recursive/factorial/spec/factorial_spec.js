@@ -8,4 +8,8 @@ describe('factorial', function() {
   it('handles 1', function() {
     expect(factorial(1)).toBe(1);
   });
+
+  it('handles 2', function() {
+    expect(factorial(2)).toBe(2);
+  });
 });
