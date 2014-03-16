@@ -12,4 +12,8 @@ describe('countx', function() {
   it('handles an empty string', function() {
     expect(countx('')).toBe(0);
   });
+
+  it('handles 1 letter string w/o x', function() {
+    expect(countx('y')).toBe(0);
+  });
 });
