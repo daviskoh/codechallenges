@@ -5,8 +5,11 @@
 // Recursively return the number of "ears" in the bunny line 1, 2, ... n
 // (without loops or multiplication)
 
-function bunnyEars() {
-  
+function bunnyEars(nOfBunnies) {
+  // termination case
+  if (nOfBunnies === 0) {
+    return 0;
+  };
 }
 
 module.exports = bunnyEars;
