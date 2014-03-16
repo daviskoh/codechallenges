@@ -12,4 +12,8 @@ describe('factorial', function() {
   it('handles 2', function() {
     expect(factorial(2)).toBe(2);
   });
+
+  it('handles 3', function() {
+    expect(factorial(3)).toBe(6);
+  });
 });
