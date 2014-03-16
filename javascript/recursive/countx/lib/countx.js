@@ -8,7 +8,7 @@ function countx(string) {
   };
 
   // recursive case
-  if (string.charAt(string.length - 1) === 'x') {
+  if (string.charAt(0) === 'x') {
     return 1 + countx(string.substring(1));
   };
 

@@ -16,4 +16,8 @@ describe('countx', function() {
   it('handles 1 letter string w/o x', function() {
     expect(countx('y')).toBe(0);
   });
+
+  it('handles complex case', function() {
+    expect(countx('xxhixx')).toBe(4);
+  });
 });
