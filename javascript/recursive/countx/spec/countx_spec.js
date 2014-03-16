@@ -20,4 +20,8 @@ describe('countx', function() {
   it('handles complex case', function() {
     expect(countx('xxhixx')).toBe(4);
   });
+
+  it('handles long string not containing x', function() {
+    expect(countx(';sldkfja;lsdkfjas;kdf')).toBe(0);
+  });
 });
