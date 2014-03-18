@@ -16,4 +16,8 @@ describe('changePi', function() {
   it('sandwiched pi', function() {
     expect(changePi('xpix')).toBe('x3.14x');
   });
+
+  it('handles multiple "pi"', function() {
+    expect(changePi('pipi')).toBe('3.143.14');
+  });
 });
