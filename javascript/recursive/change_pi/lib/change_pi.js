@@ -7,10 +7,11 @@ function changePi(string) {
   // base case
   if (string.indexOf('pi') === -1) {
     return string;
-  };
-  
-  // if exist, replace string w/ '3.14'
-    // & call changePi w/ new string
+  } else {
+    // if exist, replace string w/ '3.14'
+      // & call changePi w/ new string
+    return '3.14' + changePi(string.substring(string.indexOf('pi') + 2));
+  }
 }
 
 module.exports = changePi;

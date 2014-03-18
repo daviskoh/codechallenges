@@ -8,4 +8,8 @@ describe('changePi', function() {
   it('returns string if no "pi"', function() {
     expect(changePi('xyz')).toBe('xyz');
   });
+
+  it('recognizes pi', function() {
+    expect(changePi('pix')).toBe('3.14x');
+  });
 });
