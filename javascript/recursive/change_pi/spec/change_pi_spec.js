@@ -24,4 +24,8 @@ describe('changePi', function() {
   it('distinguishes between pi and p', function() {
     expect(changePi('pip')).toBe('3.14p');
   });
+
+  it('distinguishes between pi and i', function() {
+    expect(changePi('pii')).toBe('3.14i');
+  });
 });
