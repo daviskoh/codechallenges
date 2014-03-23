@@ -7,9 +7,16 @@
 
 var array11 = function(array, initial) {
   // base case
-  if (array.length === 0) {
+  if (array.length === initial) {
     return 0;
   };
+
+  // recursive case
+  if (array[initial] === 11) {
+    return 1 + array11(array, initial + 1);
+  };
+
+  return array11(array, initial + 1);
 };
 
 module.exports = array11;
