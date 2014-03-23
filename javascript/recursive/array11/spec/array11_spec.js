@@ -12,4 +12,8 @@ describe('array11', function() {
   it('recognizes the number 11', function() {
     expect(array11([11], 0)).toBe(1);
   });
+
+  it('counts up all 11', function() {
+    expect(array11([11, 11], 0)).toBe(2);
+  });
 });
