@@ -16,4 +16,8 @@ describe('array11', function() {
   it('counts up all 11', function() {
     expect(array11([11, 11], 0)).toBe(2);
   });
+
+  it('distinguishes between 11 and other numbers', function() {
+    expect(array11([11, 3, 11, 55, 11], 0)).toBe(3);
+  });
 });
