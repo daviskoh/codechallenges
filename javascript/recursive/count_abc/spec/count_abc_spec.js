@@ -35,4 +35,9 @@ describe('countABCRecursive', function() {
         expect(countABCRecursive('abaxxxabcxxxabaxxxabaxxxabc')).toBe(5);
         expect(countABCRegular('abaxxxabcxxxabaxxxabaxxxabc')).toBe(5);
     });
+
+    it('handles multiple consecutive abcs and abas', function () {
+        expect(countABCRecursive('abcabcabcabaaba')).toBe(5);
+        expect(countABCRegular('abcabcabcabaaba')).toBe(5);
+    });
 });
