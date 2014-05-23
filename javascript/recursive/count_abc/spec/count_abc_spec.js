@@ -16,4 +16,16 @@ describe('countABC', function() {
     it('handles a single instance of aba', function () {
         expect(countABC('aba')).toBe(1);
     });
+
+    it('handles multiple cases of abc', function () {
+        expect(countABC('abcxxabc')).toBe(2);
+    });
+
+    it('handles multiple cases of aba', function () {
+        expect(countABC('abaxxabaxxaba')).toBe(3);
+    });
+
+    it('handles multiple cases of both abc & aba', function () {
+        expect(countABC('abaxxxabcxxxabaxxxabaxxxabc')).toBe(5);
+    });
 });
