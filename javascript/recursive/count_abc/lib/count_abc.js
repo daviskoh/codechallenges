@@ -5,7 +5,8 @@ function countABC (string) {
     }
 
     // recursive cases
-    if (string.substring(0, 3) === 'abc') {
+    var firstThree = string.substring(0, 3);
+    if (firstThree === 'abc' || firstThree === 'aba') {
         return 1 + countABC(string.substring(3));
     }
 
