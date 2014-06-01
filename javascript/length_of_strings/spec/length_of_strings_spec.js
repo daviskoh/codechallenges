@@ -12,4 +12,8 @@ describe('lengthOfStrings', function() {
     it('handles a string of length 1', function () {
         expect(lengthOfStrings('a')).toBe(1);
     });
+
+    it('handles a multi-length string', function () {
+        expect(lengthOfStrings('ab')).toBe(2);
+    });
 });
