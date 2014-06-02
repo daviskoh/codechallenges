@@ -19,4 +19,8 @@ describe('nonDuplicatedValues', function() {
     it('handles a simple case', function () {
         expect(nonDuplicatedValues(['foo', 'foo', 'ello'])).toEqual(['ello']);
     });
+
+    it('handles a complex case', function () {
+        expect(nonDuplicatedValues(['foo', 'ello', 'foo', 'meow', 'food', 'dude', 'dude'])).toEqual(['ello', 'meow', 'food']);
+    });
 });
