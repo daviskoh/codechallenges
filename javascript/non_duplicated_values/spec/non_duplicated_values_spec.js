@@ -15,4 +15,8 @@ describe('nonDuplicatedValues', function() {
     it('handles an array with a single element', function () {
         expect(nonDuplicatedValues(['ello'])).toEqual(['ello']);
     });
+
+    it('handles a simple case', function () {
+        expect(nonDuplicatedValues(['foo', 'foo', 'ello'])).toEqual(['ello']);
+    });
 });
