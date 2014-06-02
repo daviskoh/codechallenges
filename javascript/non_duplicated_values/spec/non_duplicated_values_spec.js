@@ -7,4 +7,12 @@ describe('nonDuplicatedValues', function() {
     it('is a function', function () {
         expect(typeof nonDuplicatedValues).toBe('function');
     });
+
+    it('handles an empty array', function () {
+        expect(nonDuplicatedValues([])).toEqual([]);
+    });
+
+    it('handles an array with a single element', function () {
+        expect(nonDuplicatedValues(['ello'])).toEqual(['ello']);
+    });
 });
