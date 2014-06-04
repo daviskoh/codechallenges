@@ -4,4 +4,12 @@ describe('stringFrequency', function() {
     it('is a function', function () {
         expect(typeof stringFrequency).toBe('function');
     });
+
+    it('handles a case w/ non occurence', function () {
+        expect(stringFrequency('', 's')).toBe(0);
+    });
+
+    it('handles a case w/ single occurence', function () {
+        expect(stringFrequency('s', 's')).toBe(1);
+    });
 });
