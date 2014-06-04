@@ -12,4 +12,8 @@ describe('stringFrequency', function() {
     it('handles a case w/ single occurence', function () {
         expect(stringFrequency('s', 's')).toBe(1);
     });
+
+    it('handles multiple occurences', function () {
+        expect(stringFrequency('ssss', 's')).toBe(4);
+    });
 });
