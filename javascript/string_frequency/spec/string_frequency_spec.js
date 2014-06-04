@@ -16,4 +16,8 @@ describe('stringFrequency', function() {
     it('handles multiple occurences', function () {
         expect(stringFrequency('ssss', 's')).toBe(4);
     });
+
+    it('handles multi-character substrings', function () {
+       expect(stringFrequency('ssss', 'ss')).toBe(2); 
+    });
 });

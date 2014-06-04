@@ -8,7 +8,7 @@ function stringFrequency (string, substring) {
     // if string contains substring
     var index = string.indexOf(substring);
     if (index !== -1) {
-        return 1 + stringFrequency(string.substring(index + 1), substring);
+        return 1 + stringFrequency(string.substring(index + substring.length), substring);
     }
 
     return 0 + stringFrequency(string.substring(1), substring);
