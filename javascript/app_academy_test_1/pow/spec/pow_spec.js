@@ -14,4 +14,10 @@ describe('pow', function() {
             expect(pow(i, 0)).toBe(1);
         };
     });
+
+    it('handles any number raised to the 1st power', function () {
+       for (var i = 10; i >= 0; i--) {
+            expect(pow(i, 1)).toBe(i);
+        }; 
+    });
 });
