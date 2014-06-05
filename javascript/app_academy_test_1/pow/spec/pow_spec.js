@@ -8,4 +8,10 @@ describe('pow', function() {
     it('is a function', function () {
         expect(typeof pow).toBe('function');
     });
+
+    it('handles any number raised to the 0th power', function () {
+        for (var i = 10; i >= 0; i--) {
+            expect(pow(i, 0)).toBe(1);
+        };
+    });
 });
