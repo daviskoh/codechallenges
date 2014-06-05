@@ -24,6 +24,14 @@ describe('pow', function() {
     it('handles a number raised to the 2nd power', function () {
        for (var i = 10; i >= 0; i--) {
             expect(pow(i, 2)).toBe(Math.pow(i, 2));
-        }; 
+        };
     });
+
+    for (var i = 20; i >= 0; i--) {
+        it('raises any number to the ' + i + ' power', function () {
+            for (var j = 10; j >= 0; j--) {
+                expect(pow(i, j)).toBe(Math.pow(i, j));
+            };
+        });
+    };
 });
