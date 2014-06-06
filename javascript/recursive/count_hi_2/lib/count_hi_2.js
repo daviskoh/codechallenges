@@ -3,9 +3,14 @@ function countHi2 (string) {
         return 0;
     }
 
-    var index = string.indexOf('hi');
-    if (index !== -1) {
-        return 1 + countHi2(string.substring(index + 1));
+    var indexX = string.indexOf('xhi');
+    if (indexX !== -1) {
+        return countHi2(string.substring(indexX + 3));
+    }
+
+    var indexH = string.indexOf('hi');
+    if (indexH !== -1) {
+        return 1 + countHi2(string.substring(indexH + 2));
     }
 
     return countHi2(string.substring(1));

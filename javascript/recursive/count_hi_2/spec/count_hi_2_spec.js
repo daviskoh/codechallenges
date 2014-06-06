@@ -32,4 +32,8 @@ describe('countHi2', function() {
     it('handles multiple occurrences of hi', function () {
         expect(countHi2('hiasdfhiasfasdfhiasdf')).toBe(3);
     });
+
+    it('discounts any his that are prefixed w/ x', function () {
+        expect(countHi2('xhisdfsdfxhiasdfhi')).toBe(1);
+    });
 });
