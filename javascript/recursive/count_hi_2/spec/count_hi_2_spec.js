@@ -28,4 +28,8 @@ describe('countHi2', function() {
     it('handles a single occurence of hi', function () {
         expect(countHi2('hiaslkdjf')).toBe(1);
     });
+
+    it('handles multiple occurrences of hi', function () {
+        expect(countHi2('hiasdfhiasfasdfhiasdf')).toBe(3);
+    });
 });
