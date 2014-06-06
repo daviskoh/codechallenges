@@ -16,4 +16,12 @@ describe('countHi2', function() {
     it('handles a 1 char string that does not contain hi', function () {
         expect(countHi2('d')).toBe(0);
     });
+
+    it('handles a 2 char string that does not contain hi', function () {
+        expect(countHi2('dd')).toBe(0);
+    });
+
+    it('handles a multi char string that does not contain hi', function () {
+        expect(countHi2('dsdfasdfd')).toBe(0);
+    });
 });
