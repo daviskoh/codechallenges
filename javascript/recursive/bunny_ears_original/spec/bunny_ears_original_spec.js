@@ -19,4 +19,10 @@ describe('bunnyEarsOriginal', function() {
     it('handles a single bunny', function () {
         expect(bunnyEarsOriginal(1)).toBe(2);
     });
+
+    it('handles multiple bunnies', function () {
+        for (var i = 10 - 1; i >= 0; i--) {
+            expect(bunnyEarsOriginal(i)).toBe(i * 2);
+        };
+    });
 });
