@@ -12,4 +12,8 @@ describe('countHi2', function() {
     it('handles an empty string', function () {
         expect(countHi2('')).toBe(0);
     });
+
+    it('handles a 1 char string that does not contain hi', function () {
+        expect(countHi2('d')).toBe(0);
+    });
 });
