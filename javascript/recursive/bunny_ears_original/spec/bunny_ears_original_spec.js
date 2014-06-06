@@ -15,4 +15,8 @@ describe('bunnyEarsOriginal', function() {
     it('handles 0 bunnies', function () {
         expect(bunnyEarsOriginal(0)).toBe(0);
     });
+
+    it('handles a single bunny', function () {
+        expect(bunnyEarsOriginal(1)).toBe(2);
+    });
 });
