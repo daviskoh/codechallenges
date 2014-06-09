@@ -19,4 +19,8 @@ describe('triangle', function() {
     it('calculates a triange w/ 2 rows', function () {
         expect(triangle(2)).toBe(3);
     });
+
+    it('calculates a triange w/ 3 rows', function () {
+        expect(triangle(3)).toBe(6);
+    });
 });
