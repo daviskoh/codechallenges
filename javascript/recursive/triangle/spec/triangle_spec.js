@@ -12,15 +12,19 @@ describe('triangle', function() {
         expect(triangle(0)).toBe(0);
     });
 
-    it('calculates a triange w/ a single row', function () {
+    it('calculates a triangle w/ a single row', function () {
         expect(triangle(1)).toBe(1);
     });
 
-    it('calculates a triange w/ 2 rows', function () {
+    it('calculates a triangle w/ 2 rows', function () {
         expect(triangle(2)).toBe(3);
     });
 
-    it('calculates a triange w/ 3 rows', function () {
+    it('calculates a triangle w/ 3 rows', function () {
         expect(triangle(3)).toBe(6);
+    });
+
+    it('calculates a triangle w/ 5 rows', function () {
+        expect(triangle(5)).toBe(1+2+3+4+5);
     });
 });
