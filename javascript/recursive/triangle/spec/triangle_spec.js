@@ -27,4 +27,16 @@ describe('triangle', function() {
     it('calculates a triangle w/ 5 rows', function () {
         expect(triangle(5)).toBe(1+2+3+4+5);
     });
+
+    it('calculates a triangle w/ many rows', function () {
+        for (var i = 6; i < 20; i++) {
+            var sum = 0;
+
+            for (var j = 0; j < i; j++) {
+                sum += j;
+            };
+            
+            expect(triangle(i - 1)).toBe(sum);
+        };
+    });
 });
