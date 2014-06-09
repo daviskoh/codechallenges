@@ -15,4 +15,8 @@ describe('triangle', function() {
     it('calculates a triange w/ a single row', function () {
         expect(triangle(1)).toBe(1);
     });
+
+    it('calculates a triange w/ 2 rows', function () {
+        expect(triangle(2)).toBe(3);
+    });
 });
