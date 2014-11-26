@@ -16,4 +16,8 @@ describe('arrayAddition1', function() {
     it('should handle complex case from ex', function () {
         expect(arrayAddition1([4, 6, 23, 10, 1, 3])).toBe('true');
     });
+
+    it('should handle a complex case', function () {
+        expect(arrayAddition1([1,5,3,4,6])).toBe('true');
+    });
 });
