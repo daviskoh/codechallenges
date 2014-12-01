@@ -20,4 +20,8 @@ describe('letterCountI', function() {
     it('should handle a complex case', function () {
         expect(letterCountI('red none yellow')).toBe('none');
     });
+
+    it('should be case insensitive', function () {
+        expect(letterCountI('Ello friend')).toBe('Ello');
+    });
 });

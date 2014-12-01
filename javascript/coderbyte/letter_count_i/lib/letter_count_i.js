@@ -31,7 +31,6 @@ function letterCountI (string) {
 
     for (var i = 0; i < stringArray.length; i++) {
         var uniqueCharsArray = uniqueChars(stringArray[i]);
-        console.log(uniqueCharsArray);
 
         for (var j = 0; j < uniqueCharsArray.length; j++) {
             var currentCount = singleLetterCount(stringArray[i], uniqueCharsArray[j]);
