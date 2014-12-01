@@ -16,4 +16,8 @@ describe('secondGreatlow', function() {
     it('should handle an array of length 2', function () {
         expect(secondGreatlow([8,5])).toBe('8 5');
     });
+
+    it('should handle multi digit numbers', function () {
+        expect(secondGreatlow([7, 12, 98, 106])).toBe('12 98');
+    });
 });
