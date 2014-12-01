@@ -20,4 +20,8 @@ describe('secondGreatlow', function() {
     it('should handle multi digit numbers', function () {
         expect(secondGreatlow([7, 12, 98, 106])).toBe('12 98');
     });
+
+    it('should treat repeating values as a singe value', function () {
+        expect(secondGreatlow([7, 7, 12, 98, 106])).toBe('12 98');
+    });
 });

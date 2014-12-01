@@ -7,10 +7,25 @@ function sortNumber(a, b) {
     return a - b;
 }
 
-function secondGreatlow (arr) {
-    var sortedArray = arr.sort(sortNumber);
+function unique(arr) {
+    var uniqueArr = [];
 
-    return arr[1] + ' ' + arr[arr.length - 2];
+    for (var i = 0; i < arr.length; i++) {
+        var currentElement = arr[i];
+
+        if (uniqueArr.indexOf(currentElement) === -1) uniqueArr.push(currentElement);
+    }
+
+    return uniqueArr;
+}
+
+function secondGreatlow (arr) {
+    var sortedArray = arr.sort(sortNumber),
+        uniqueArr = unique(sortedArray);
+
+    if (uniqueArr.length < 2) return uniqueArr[0] + ' ' + uniqueArr[0];
+
+    return uniqueArr[1] + ' ' + uniqueArr[uniqueArr.length - 2];
 }
 
 module.exports = secondGreatlow;
