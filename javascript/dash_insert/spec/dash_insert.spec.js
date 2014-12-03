@@ -22,4 +22,8 @@ describe('dashInsert', function() {
         expect(dashInsert(8)).toBe('8');
         expect(dashInsert(3)).toBe('3');
     });
+
+    it('should handle a complex case of multi digits', function () {
+        expect(dashInsert(9997)).toBe('9-9-9-7');
+    });
 });
