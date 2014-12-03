@@ -11,6 +11,7 @@ describe('dashInsert', function() {
 
     it('should handle a simple 2 digit case', function () {
         expect(dashInsert(99)).toBe('9-9');
+        expect(dashInsert(77)).toBe('7-7');
     });
 
     it('should not treat 0 as a odd num', function () {

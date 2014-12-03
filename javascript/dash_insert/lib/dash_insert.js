@@ -2,9 +2,10 @@
 // 0 is not odd num
 
 function isOdd(numString) {
+    if (!numString) return;
     if (numString === '0') return;
 
-    return parseInt(numString) % 3 === 0;
+    return parseInt(numString) % 2 !== 0;
 }
 
 function dashInsert (n) {
