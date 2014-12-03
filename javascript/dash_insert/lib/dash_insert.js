@@ -2,8 +2,8 @@
 // 0 is not odd num
 
 function isOdd(numString) {
-    if (!numString) return;
-    if (numString === '0') return;
+    // if (!numString) return;
+    // if (numString === '0') return;
 
     return parseInt(numString) % 2 !== 0;
 }
