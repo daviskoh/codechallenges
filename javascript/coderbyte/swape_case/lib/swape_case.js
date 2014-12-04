@@ -1,9 +1,11 @@
 // swap out the case of each letter in string
 
 function changeLetter(letter) {
-    if (letter === letter.toLowerCase()) return letter.toUpperCase();
+    var lowerCaseLetter = letter.toLowerCase();
 
-    return letter.toLowerCase();
+    if (letter === lowerCaseLetter) return letter.toUpperCase();
+
+    return lowerCaseLetter;
 }
 
 function swapeCase(string) {
