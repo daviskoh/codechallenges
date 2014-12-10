@@ -1,17 +1,21 @@
-function reverseArray(array) {
-    // if (!array.length) return array;
+function reverseArray(enumerable) {
+    // recursive
+    if (!enumerable.length) return enumerable;
 
-    // var endIndex = array.length - 1;
+    var endIndex = enumerable.length - 1,
+        lastValue = enumerable[endIndex];
 
-    // return [array[endIndex]].concat(reverseArray(array.slice(0, endIndex)));
+    return (typeof enumerable === 'string' ? lastValue : [lastValue]).concat(reverseArray(enumerable.slice(0, endIndex)));
 
-    var result = [];
-    for (var i = array.length - 1; i >= 0; i--) {
-        result.push(array[i]);
-    }
+    // iterative
+    // var result = [];
+    // for (var i = array.length - 1; i >= 0; i--) {
+    //     result.push(array[i]);
+    // }
 
-    return result;
+    // return result;
 
+    // swap
     // var left,
     //     right,
     //     length = array.length;

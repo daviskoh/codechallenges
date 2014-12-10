@@ -20,4 +20,8 @@ describe('reverseArray', function() {
     it('should handle multi elements', function () {
         expect(reverseArray([1,5,3,9])).toEqual([9,3,5,1]);
     });
+
+    it('should not reverse strings', function () {
+        expect(reverseArray('abc')).toBe('cba');
+    });
 });
