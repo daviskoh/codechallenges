@@ -11,6 +11,18 @@ function reverseArray(array) {
     }
 
     return result;
+
+    // var left,
+    //     right,
+    //     length = array.length;
+
+    // for (left = 0, right = length - 1; left < right; left += 1, right -= 1) {
+    //     var temporary = array[left];
+    //     array[left] = array[right];
+    //     array[right] = temporary;
+    // }
+
+    // return array;
 }
 
 module.exports = reverseArray;
