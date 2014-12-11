@@ -12,29 +12,28 @@
 // until result < 3
     // keep dividing by 2
     // if result is 2
-        // return true
+        // set result = true
     // else
-        // return false
+        // set result = false
 
 
 
 function powerOfTwo(i) {
     if (i < 0) return 'false';
 
-    var result = i,
-        returnVal;
+    var result;
 
-    while (result > 3) {
-        result = result / 2;
+    while (i > 3) {
+        i = i / 2;
 
-        if (result === 2) {
-            returnVal = 'true';
+        if (i === 2) {
+            result = 'true';
         } else {
-            returnVal = 'false';
+            result = 'false';
         }
     }
 
-    return returnVal;
+    return result;
 }
 
 module.exports = powerOfTwo;
