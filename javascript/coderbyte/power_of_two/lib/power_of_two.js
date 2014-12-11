@@ -16,24 +16,40 @@
     // else
         // set result = false
 
+function checkNum(i) {
+    if (i < 3) {
+        if (i === 2) return 'true';
 
+        return 'false';
+    }
+
+    return checkNum(i / 2);
+}
 
 function powerOfTwo(i) {
     if (i < 0) return 'false';
 
-    var result;
+    // var result;
 
-    while (i > 3) {
-        i = i / 2;
+    // while (i > 3) {
+    //     i = i / 2;
 
-        if (i === 2) {
-            result = 'true';
-        } else {
-            result = 'false';
-        }
+    //     if (i === 2) {
+    //         result = 'true';
+    //     } else {
+    //         result = 'false';
+    //     }
+    // }
+
+    // return result;
+
+    if (i < 3) {
+        if (i === 2) return 'true';
+
+        return 'false';
     }
 
-    return result;
+    return powerOfTwo(i / 2);
 }
 
 module.exports = powerOfTwo;
