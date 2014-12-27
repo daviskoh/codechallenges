@@ -2,5 +2,23 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=68&amp;CharacterRangeLoc=542&amp;EndingColumnNumber=37&amp;EndingLineNumber=22&amp;StartingColumnNumber=5&amp;StartingLineNumber=22&amp;Timestamp=441402505.250156">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=576&amp;EndingColumnNumber=19&amp;EndingLineNumber=22&amp;StartingColumnNumber=13&amp;StartingLineNumber=22&amp;Timestamp=441402505.250449">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=603&amp;EndingColumnNumber=24&amp;EndingLineNumber=22&amp;StartingColumnNumber=9&amp;StartingLineNumber=22&amp;Timestamp=441402505.250684">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=603&amp;EndingColumnNumber=24&amp;EndingLineNumber=22&amp;StartingColumnNumber=9&amp;StartingLineNumber=22&amp;Timestamp=441402505.250916">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/daviskoh/dev/codechallenges/swift/java-recursion/EndX/EndX.playground#CharacterRangeLen=35&amp;CharacterRangeLoc=653&amp;EndingLineNumber=28&amp;StartingLineNumber=28&amp;Timestamp=441402534.16481">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=27&amp;CharacterRangeLoc=623&amp;EndingColumnNumber=39&amp;EndingLineNumber=25&amp;StartingColumnNumber=12&amp;StartingLineNumber=25&amp;Timestamp=441402534.575681">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
