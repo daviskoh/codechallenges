@@ -10,7 +10,7 @@
 #import "BunnyEars2.h"
 
 @interface BunnyEars2Spec : XCTestCase {
-  BunnyEars2 *_bunnyEars;
+    int _bunnyEars;
 }
 
 @end
@@ -37,6 +37,32 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+#pragma mark TestCountingBunnyEars
+
+- (void)testNoBunnies {
+    _bunnyEars = [BunnyEars2 calculateEars:0];
+    
+    XCTAssertEqual(_bunnyEars, 0);
+}
+
+- (void)testOneBunny {
+    _bunnyEars = [BunnyEars2 calculateEars:1];
+    
+    XCTAssertEqual(_bunnyEars, 2);
+}
+
+- (void)testEvenNumberOfBunnies {
+    _bunnyEars = [BunnyEars2 calculateEars:2];
+    
+    XCTAssertEqual(_bunnyEars, 5);
+}
+
+- (void)testOddNumberOfBunnies {
+    _bunnyEars = [BunnyEars2 calculateEars:3];
+    
+    XCTAssertEqual(_bunnyEars, 7);
 }
 
 @end

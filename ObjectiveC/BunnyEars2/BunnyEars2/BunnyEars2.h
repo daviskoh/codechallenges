@@ -17,6 +17,6 @@
 
 @interface BunnyEars2 : NSObject
 
-- (int)calculate:(int)bunnies;
++ (int)calculateEars:(int)bunnies;
 
 @end
