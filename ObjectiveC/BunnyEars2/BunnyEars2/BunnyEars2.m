@@ -10,4 +10,8 @@
 
 @implementation BunnyEars2
 
+- (int)calculate:(int)bunnies {
+  return 1;
+}
+
 @end

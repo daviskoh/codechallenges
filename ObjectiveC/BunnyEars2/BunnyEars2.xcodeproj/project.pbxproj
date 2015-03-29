@@ -10,6 +10,8 @@
 		DDD99A4C1AC77BEA00C37452 /* BunnyEars2.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD99A4B1AC77BEA00C37452 /* BunnyEars2.h */; };
 		DDD99A4E1AC77BEA00C37452 /* BunnyEars2.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD99A4D1AC77BEA00C37452 /* BunnyEars2.m */; };
 		DDD99A541AC77BEB00C37452 /* libBunnyEars2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD99A481AC77BEA00C37452 /* libBunnyEars2.dylib */; };
+		DDD99A631AC77C7200C37452 /* BunnyEars2Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD99A621AC77C7200C37452 /* BunnyEars2Spec.m */; };
+		DDD99A661AC77F5100C37452 /* BunnyEars2.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD99A4D1AC77BEA00C37452 /* BunnyEars2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 		DDD99A4D1AC77BEA00C37452 /* BunnyEars2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BunnyEars2.m; sourceTree = "<group>"; };
 		DDD99A531AC77BEB00C37452 /* BunnyEars2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BunnyEars2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD99A591AC77BEB00C37452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD99A621AC77C7200C37452 /* BunnyEars2Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BunnyEars2Spec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				DDD99A581AC77BEB00C37452 /* Supporting Files */,
+				DDD99A621AC77C7200C37452 /* BunnyEars2Spec.m */,
 			);
 			path = BunnyEars2Tests;
 			sourceTree = "<group>";
@@ -199,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD99A661AC77F5100C37452 /* BunnyEars2.m in Sources */,
+				DDD99A631AC77C7200C37452 /* BunnyEars2Spec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
