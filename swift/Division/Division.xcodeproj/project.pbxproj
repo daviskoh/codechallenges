@@ -10,6 +10,8 @@
 		DDD3BB961AD7312400F91217 /* Division.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD3BB951AD7312400F91217 /* Division.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDD3BB9C1AD7312400F91217 /* Division.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD3BB901AD7312400F91217 /* Division.framework */; };
 		DDD3BBA31AD7312400F91217 /* DivisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3BBA21AD7312400F91217 /* DivisionTests.swift */; };
+		DDD3BBAD1AD7323400F91217 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3BBAC1AD7323400F91217 /* Division.swift */; };
+		DDD3BBAE1AD7323A00F91217 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3BBAC1AD7323400F91217 /* Division.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		DDD3BB9B1AD7312400F91217 /* DivisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD3BBA11AD7312400F91217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD3BBA21AD7312400F91217 /* DivisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionTests.swift; sourceTree = "<group>"; };
+		DDD3BBAC1AD7323400F91217 /* Division.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		DDD3BB921AD7312400F91217 /* Division */ = {
 			isa = PBXGroup;
 			children = (
+				DDD3BBAC1AD7323400F91217 /* Division.swift */,
 				DDD3BB951AD7312400F91217 /* Division.h */,
 				DDD3BB931AD7312400F91217 /* Supporting Files */,
 			);
@@ -209,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD3BBAD1AD7323400F91217 /* Division.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD3BBAE1AD7323A00F91217 /* Division.swift in Sources */,
 				DDD3BBA31AD7312400F91217 /* DivisionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +321,7 @@
 		DDD3BBA71AD7312400F91217 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -326,12 +333,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DDD3BBA81AD7312400F91217 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
