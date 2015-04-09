@@ -18,5 +18,23 @@ FOUNDATION_EXPORT const unsigned char NumberAdditionVersionString[];
 
 
 int (^numberSearch)(NSString *) = ^(NSString *str) {
-    return 0;
+    if (str.length == 0) {
+        return 0;
+    }
+    
+    __block int sum = 0;
+
+    // create regex
+    NSRegularExpression *regex = [NSRegularExpression
+        regularExpressionWithPattern:@"(\\d+)"
+                             options:NSRegularExpressionCaseInsensitive
+                               error:NULL];
+    // find matches of nums
+    [regex enumerateMatchesInString:str options:0 range:NSMakeRange(0, str.length) usingBlock: ^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop) {
+        NSString *substring = [str substringWithRange:match.range];
+        sum += substring.intValue;
+    }];
+    
+    // parse text as string
+    return sum;
 };

@@ -26,13 +26,29 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
 - (void)testBaseCase {
     XCTAssertEqual(numberSearch(@""), 0);
+}
+
+- (void)testFirstMatchAsANumber {
+    XCTAssertEqual(numberSearch(@"1"), 1);
+    XCTAssertEqual(numberSearch(@"11"), 11);
+    XCTAssertEqual(numberSearch(@"35"), 35);
+}
+
+- (void)testNoNumbers {
+    XCTAssertEqual(numberSearch(@"asdfsdf"), 0);
+}
+
+- (void)testNextMatchAsANumber {
+    XCTAssertEqual(numberSearch(@"asdfasdf1"), 1);
+    XCTAssertEqual(numberSearch(@"asdfasdf11"), 11);
+    XCTAssertEqual(numberSearch(@"asdfasdf39180"), 39180);
+}
+
+- (void)testMultiMatches {
+    XCTAssertEqual(numberSearch(@"asdfasdf39180asdfasfsf11123"), 39180 + 11123);
+    XCTAssertEqual(numberSearch(@"1asdfas2dfasdf4asfs"), 1 + 2 + 4);
 }
 
 @end
