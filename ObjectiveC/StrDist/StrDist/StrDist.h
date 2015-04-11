@@ -25,5 +25,15 @@ FOUNDATION_EXPORT const unsigned char StrDistVersionString[];
 // strDist("cccatcowcatxx", "cat") → 9
 
 int (^strDist)(NSString *, NSString *) = ^(NSString *string, NSString *substring) {
+    if (string.length == 0) {
+        return 0;
+    }
+    
+    // find 1st occurrence of substring
+    // return length of substring
+    if ([string rangeOfString:substring].location != NSNotFound) {
+        return (int)substring.length;
+    }
+    
     return 0;
 };

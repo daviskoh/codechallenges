@@ -49,4 +49,12 @@
     XCTAssertEqual(strDist(@"12312asdfdud", @"dude"), expected);
 }
 
+- (void)testSingleMatch {
+    XCTAssertEqual(strDist(@"a", @"a"), 1);
+
+    XCTAssertEqual(strDist(@"aba", @"b"), 1);
+    
+    XCTAssertEqual(strDist(@"BoBcatmeowro", @"cat"), 3);
+}
+
 @end
