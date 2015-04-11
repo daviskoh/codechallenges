@@ -30,16 +30,14 @@ FOUNDATION_EXPORT const unsigned char StrDistVersionString[];
 // iterate backwards until 1st match is found
 
 int (^strDist)(NSString *, NSString *) = ^(NSString *string, NSString *substring) {
-    if (string.length < substring.length || !string.length) {
+    if (string.length < substring.length) {
         return 0;
     }
     
     NSString *firstChars = [string substringToIndex: substring.length];
     
-    // if(str.substring(0, sbLen).equals(sub))
     if ([firstChars isEqualToString: substring]) {
 
-        // if(str.substring(stLen - sbLen, stLen).equals(sub))
         NSRange range = NSMakeRange(string.length - substring.length, substring.length);
         
         NSString *lastChars = [string substringWithRange: range];
@@ -48,12 +46,10 @@ int (^strDist)(NSString *, NSString *) = ^(NSString *string, NSString *substring
             return (int)string.length;
         }
 
-        // str.substring(0, stLen - 1)
         NSRange nextRange = NSMakeRange(0, string.length - 1);
 
         NSString *nextString = [string substringWithRange: nextRange];
 
-        // strDist(str.substring(1), sub);
         return strDist(nextString, substring);
     }
     
