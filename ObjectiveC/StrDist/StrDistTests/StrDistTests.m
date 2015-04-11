@@ -50,11 +50,17 @@
 }
 
 - (void)testSingleMatch {
-    XCTAssertEqual(strDist(@"a", @"a"), 1);
-
     XCTAssertEqual(strDist(@"aba", @"b"), 1);
     
     XCTAssertEqual(strDist(@"BoBcatmeowro", @"cat"), 3);
+}
+
+- (void)testOpeningAndClosesMatches {
+    XCTAssertEqual(strDist(@"aba", @"a"), 3);
+    
+    XCTAssertEqual(strDist(@"vm12345vm", @"vm"), 9);
+    
+    XCTAssertEqual(strDist(@"blahcatblahcatblah", @"cat"), 10);
 }
 
 @end
