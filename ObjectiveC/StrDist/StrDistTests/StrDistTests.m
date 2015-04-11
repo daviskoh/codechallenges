@@ -41,4 +41,12 @@
     XCTAssertEqual(strDist(@"", @""), expected);
 }
 
+- (void)testNoMatchesOfSubstring {
+    int expected = 0;
+    
+    XCTAssertEqual(strDist(@"asdfasdf", @"cat"), expected);
+    XCTAssertEqual(strDist(@"faeiojr", @"zero"), expected);
+    XCTAssertEqual(strDist(@"12312asdfdud", @"dude"), expected);
+}
+
 @end
