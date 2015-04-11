@@ -63,4 +63,13 @@
     XCTAssertEqual(strDist(@"blahcatblahcatblah", @"cat"), 10);
 }
 
+- (void)testCountingLongestString {
+    XCTAssertEqual(strDist(@"vm12345vm123vm", @"vm"), 14);
+    
+    XCTAssertEqual(strDist(@"a12345a123a", @"a"), 11);
+    
+    NSUInteger length = @"11112345vm111123vasdfasd11m11".length;
+    XCTAssertEqual(strDist(@"11112345vm111123vasdfasd11m11", @"11"), length);
+}
+
 @end
