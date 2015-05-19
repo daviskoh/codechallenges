@@ -25,4 +25,9 @@ describe('isPrime', function() {
         expect(isPrime(6)).toBe(false);
         expect(isPrime(9)).toBe(false);
     });
+
+    it('should handle multi-digit prime nums', function () {
+        expect(isPrime(89)).toBe(true);
+        expect(isPrime(124)).toBe(false);
+    });
 });
