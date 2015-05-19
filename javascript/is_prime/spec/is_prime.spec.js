@@ -19,4 +19,10 @@ describe('isPrime', function() {
         expect(isPrime(5)).toBe(true);
         expect(isPrime(7)).toBe(true);
     });
+
+    it('should be false for numbers that are not prime', function () {
+        expect(isPrime(4)).toBe(false);
+        expect(isPrime(6)).toBe(false);
+        expect(isPrime(9)).toBe(false);
+    });
 });
