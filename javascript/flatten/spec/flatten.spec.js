@@ -19,6 +19,7 @@ describe('flatten', function() {
 
     it('should handle an array multi levels deep', function () {
         expect(flatten([1,2,[3,4,[5,6]]])).toEqual([1,2,3,4,5,6]);
+        expect(flatten([1,[2,3],[4,[5,6,[7]]],8])).toEqual([1,2,3,4,5,6,7,8]);
     });
 });
 
