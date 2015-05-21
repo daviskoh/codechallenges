@@ -3,8 +3,11 @@ function flatten(array) {
 
     for (var i = 0, len = array.length; i < len; i++) {
         var element = array[i];
-        if (typeof element === 'number') result.push(element);
-        if (typeof element === 'object') result = result.concat(flatten(element));
+        if (Array.isArray(element)) {
+            result = result.concat(flatten(element));
+        } else {
+            result.push(element);
+        }
     }
 
     return result;

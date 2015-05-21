@@ -21,5 +21,15 @@ describe('flatten', function() {
         expect(flatten([1,2,[3,4,[5,6]]])).toEqual([1,2,3,4,5,6]);
         expect(flatten([1,[2,3],[4,[5,6,[7]]],8])).toEqual([1,2,3,4,5,6,7,8]);
     });
+    
+    it('should accept all primite types', function () {
+        expect(flatten(['hello', [true, [1.2,[null, [undefined]]]]])).toEqual([
+            'hello',
+            true,
+            1.2,
+            null,
+            undefined
+        ]);
+    });
 });
 
