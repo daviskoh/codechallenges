@@ -10,7 +10,11 @@ describe('swapCase', function() {
     });
 
     it('should handle a 1 char string', function () {
-        expect(swapCase('a')).toBe('a');
-        expect(swapCase('B')).toBe('B');
+        expect(swapCase('a')).toBe('A');
+        expect(swapCase('B')).toBe('b');
+    });
+
+    it('should swap cases for a multi-char string', function () {
+        expect(swapCase('aBcDE')).toBe('AbCde');
     });
 });
