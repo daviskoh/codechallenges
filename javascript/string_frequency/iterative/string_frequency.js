@@ -2,11 +2,8 @@
 function iterative(string, substring) {
     var count = 0;
 
-    // find 1st occurrence of subtring
     var indexOfFirstInstance = string.indexOf(substring),
         incr = substring.length;
-
-    // abcabc1abc
 
     if (indexOfFirstInstance !== -1) {
         for (var i = indexOfFirstInstance, len = string.length; i < len;) {
