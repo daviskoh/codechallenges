@@ -3,13 +3,19 @@ function iterative(string, substring) {
     var count = 0;
 
     // find 1st occurrence of subtring
-    var indexOfFirstInstance = string.indexOf(substring);
+    var indexOfFirstInstance = string.indexOf(substring),
+        incr = substring.length;
+
+    // abcabc1abc
+
     if (indexOfFirstInstance !== -1) {
-        // start at firstIndex
-        // iterate through string
-        // if element === substring then count++
-        for (var i = indexOfFirstInstance, len = string.length; i < len; i++) {
-            if (string[i] === substring) count++;
+        for (var i = indexOfFirstInstance, len = string.length; i < len;) {
+            if (string.substring(i, i + incr) === substring) {
+                count++;
+                i += incr;
+            } else {
+                i++;
+            }
         }
     }
     
