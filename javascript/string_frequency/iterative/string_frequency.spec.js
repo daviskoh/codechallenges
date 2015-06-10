@@ -14,4 +14,9 @@ describe('stringFrequency', function() {
         expect(stringFrequency('a', 'a')).toBe(1);
         expect(stringFrequency('abcd', 'b')).toBe(1);
     });
+
+    it('should find multiple occurrences of a single char substring', function () {
+        expect(stringFrequency('abadlkja', 'a')).toBe(3);
+        expect(stringFrequency('111144411', '1')).toBe(6);
+    });
 });
