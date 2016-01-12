@@ -1,0 +1,26 @@
+[
+  {
+    name: 'amber',
+    type: 'dog'
+  },
+  {
+    name: 'andy',
+    type: 'dog'
+  },
+  {
+    name: 'andrew',
+    type: 'dog'
+  },
+  {
+    name: 'foo',
+    type: 'cat'
+  },
+  {
+    name: 'cindy',
+    type: 'cat'
+  },
+  {
+    name: 'candy',
+    type: 'cat'
+  },
+]
