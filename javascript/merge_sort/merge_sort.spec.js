@@ -4,7 +4,7 @@ describe('mergeSort', () => {
   var arr;
 
   afterEach(() => {
-    expect(mergeSort(arr)).toEqual(arr.sort());
+    expect(mergeSort(arr)).toEqual(arr.slice().sort());
   });
 
   it('should return the array when length is 1', () => {
