@@ -14,7 +14,7 @@ import UIKit
 // last key is the mode
 
 func meanEqualsMode(nums: [Int]) -> Bool {
-  let mean = nums.reduce(0, combine: {$0 + $1}) / nums.count
+  let mean = Double(nums.reduce(0, combine: {$0 + $1})) / Double(nums.count)
 
   var counts = [Int: Int]()
   for n in nums {
@@ -23,7 +23,10 @@ func meanEqualsMode(nums: [Int]) -> Bool {
   }
   let mode = counts.sort { $0.1 > $1.1 }.first!.0
 
-  return mean == mode
+  return mean == Double(mode)
 }
 
-print(meanEqualsMode([1,3,3,3,5]))
+print(meanEqualsMode([1,3,3,3,5])) //=> true
+print(meanEqualsMode([1,2,3,2])) //=> true
+
+print(meanEqualsMode([1,2,3,2,6])) //=> false
