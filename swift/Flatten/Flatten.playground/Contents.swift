@@ -15,7 +15,7 @@ func flatten(array: [AnyObject]) -> [AnyObject] {
   for element in array {
     print(element)
     if element is [AnyObject] {
-
+      result.appendContentsOf(flatten(element as! [AnyObject]))
     } else {
       result.append(element)
     }
@@ -26,3 +26,5 @@ func flatten(array: [AnyObject]) -> [AnyObject] {
 
 print(flatten([]))
 print(flatten([1,2,3]))
+print(flatten([1, [2, 3]]))
+print(flatten([1, [2, 3, [4, [5, 6]]]]))
