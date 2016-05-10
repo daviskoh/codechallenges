@@ -13,7 +13,6 @@ func flatten(array: [AnyObject]) -> [AnyObject] {
   var result: [AnyObject] = []
 
   for element in array {
-    print(element)
     if element is [AnyObject] {
       result.appendContentsOf(flatten(element as! [AnyObject]))
     } else {
