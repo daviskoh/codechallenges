@@ -27,3 +27,5 @@ print(flatten([]))
 print(flatten([1,2,3]))
 print(flatten([1, [2, 3]]))
 print(flatten([1, [2, 3, [4, [5, 6]]]]))
+
+print(flatten(["a", ["b", "c", ["d"]]]))
